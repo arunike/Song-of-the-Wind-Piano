@@ -1,17 +1,41 @@
-### 1、主奏与伴奏中支持输入的35个音符：
- “1--” ~ “7--”， “1-” ~ “7-”， “1” ~ “7”， “1+” ~ “7+”， “1++” ~ “7++”
-分别代表倍低音、低音、中音、高音、倍高音一共35个音符
+# Song of the Wind Piano Play
 
-### 2、分别在主奏(.note)与伴奏(.accompaniments)中输入需要自动弹奏的音符
- 2.1 每个音符之间用空格隔开(任意多个空格，推荐每个音符包括空格共占用4个占位符，以便主奏和伴奏音符对齐)
+## Description
+<p>
+    Used Java to implement a piano play. 
+    Song of the wind is a famous song in China. 
+    It is a song about the wind. 
+    The wind is a symbol of freedom.
+</p>
 
- 2.2 输入字符"0"，则会使音长额外延长一倍；
-
- 2.3 输入除了上面35个音符以及“0”以外的任意字符不会对弹奏起任何作用；
-
- 2.4 如果需要换行填写，则需在上一行的末尾以及下一行的开头都加上空格;
-
-### 3、音长里输入每两个音符之间的间隔时长，单位是毫秒(ms)
- 建议输入整片谱子的最短的间隔，其余更长的的间隔可以利用延时加倍解决
- 
- 
+<p>
+    The Java program supports the following functions:
+</p>
+<ol type='1'> 
+    <li>35 notes supported for input in main and accompaniment:
+        <ul>
+            <li>A total of 35 notes representing double bass, bass, midrange, treble, and double treble.</li>
+            <li>"1--" ~ "7--"， "1-" ~ "7-"， "1" ~ "7"， "1+" ~ "7+"， "1++" ~ "7++".</li>
+        </ul>
+    </li>
+    <li>Manually enter the notes to be played automatically in the main (.note) and accompaniment (.accompaniments) respectively.
+        <ol type='a'>
+            <li>
+                Each note is separated by a space (any number of spaces, it is recommended that each note takes up 4 placeholders including spaces, so that the main and accompaniment notes are aligned).
+            </li>
+            <li>
+                Entering the character "0" will double the sound length.
+            </li>
+            <li>
+                Inputting any character other than the above 35 notes and "0" will not have any effect on playing.
+            </li>
+            <li>
+                If you start a new line, you simple just need to add a space at the end of the previous line and the beginning of the next line.
+            </li>
+        </ol>
+    </li>
+    <li>
+        The interval between every two notes in the sound length is milliseconds (ms),
+        It is recommended to enter the shortest interval of the entire score, and the remaining longer intervals can be solved by doubling the delay.
+    </li>
+</ol>
