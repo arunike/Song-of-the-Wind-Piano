@@ -9,7 +9,7 @@
     <li>35 notes supported for input in main and accompaniment:
         <ul>
             <li>A total of 35 notes representing double bass, bass, midrange, treble, and double treble.</li>
-            <li>"1--" ~ "7--"， "1-" ~ "7-"， "1" ~ "7"， "1+" ~ "7+"， "1++" ~ "7++".</li>
+            <li>"1--" ~ "7--", "1-" ~ "7-", "1" ~ "7", "1+" ~ "7+", "1++" ~ "7++".</li>
         </ul>
     </li>
     <li>Manually enter the notes to be played automatically in the main (.note) and accompaniment (.accompaniments) respectively.
