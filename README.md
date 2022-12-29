@@ -1,15 +1,10 @@
 # Song of the Wind Piano Play
 
 ## Description
-<p>
-    Used Java to implement a piano play. 
-    Song of the wind is a famous song in China. 
-    It is a song about the wind. 
-    The wind is a symbol of freedom.
+<p> Used Java to implement a piano play. Song of the wind is a famous song in China. It is a song about the wind. The wind is a symbol of freedom.
 </p>
 
-<p>
-    The Java program supports the following functions:
+<p> The Java program supports the following functions:
 </p>
 <ol type='1'> 
     <li>35 notes supported for input in main and accompaniment:
