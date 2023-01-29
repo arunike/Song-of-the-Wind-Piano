@@ -1,15 +1,23 @@
 package com.richie.play;
 
+// Import the required packages
 import com.richie.util.ConsoleOutputControlUtil;
 
+/*
+ * Define the Animation class
+ * This class is used to output the animation
+ */
 public class Animation extends Thread {
-    private String[] notes;
+    // Variables initialization
+    private String[] notes; 
     private int times;
 
-    public Animation(int times) {
+    // Constructor
+    public Animation(int times) { 
         this.times = times;
     }
 
+    // Constructor
     public Animation(String[] notes, int times) {
         this.notes = notes;
         this.times = times;
@@ -36,27 +44,28 @@ public class Animation extends Thread {
         return this;
     }
 
+    // Implementation of the animation method
     @Override
     public void run() {
         try {
-            int times = this.times;
+            int times = this.times; // Get the time interval
 
-            new Audio("audio/test.mp3").start();
-            sleep(1000);
+            new Audio("audio/test.mp3").start(); // Play the audio file
+            sleep(1000); // Wait for the audio file to be played
 
-            for (String note : this.notes) {
-                if (note.length() < 1) {
+            for (String note : this.notes) { // Loop through the notes
+                if (note.length() < 1) { // If the note is empty, skip
                     continue;
                 }
 
-                String n = note.replace("+", "").replace("-", "");
+                String n = note.replace("+", "").replace("-", ""); // Get the note
 
-                if (n.equals("\n") || n.equals("\r")) {
+                if (n.equals("\n") || n.equals("\r")) { // If the note is a line break, skip
                     System.out.print("\n");
 
                     continue;
                 }
-                switch (n) {
+                switch (n) { // Output the note
                     case "0":
                         System.out.print(ConsoleOutputControlUtil.getColoredOutputString("_",31));
                         break;
@@ -85,9 +94,9 @@ public class Animation extends Thread {
 
                 System.out.print(" ");
                 
-                sleep(times);
+                sleep(times); // Wait for the next note
             }
-        } catch (InterruptedException e) {
+        } catch (InterruptedException e) { // Catch the exception
             throw new RuntimeException(e);
         }
     }
