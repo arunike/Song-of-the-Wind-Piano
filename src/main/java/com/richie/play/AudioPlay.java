@@ -5,7 +5,9 @@ import cn.hutool.core.io.FileUtil;
 
 /*
  * Define the AudioPlay class
- * This class is used to play audio files
+ * @param notes: The notes to be played
+ * @param times: The time interval
+ * This class is used to play notes
  */
 public class AudioPlay extends Thread {
     // Variables initialization

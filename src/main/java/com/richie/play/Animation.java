@@ -5,7 +5,9 @@ import com.richie.util.ConsoleOutputControlUtil;
 
 /*
  * Define the Animation class
- * This class is used to output the animation
+ * @param notes: The notes to be played
+ * @param times: The time interval
+ * This class is used to play the animation
  */
 public class Animation extends Thread {
     // Variables initialization

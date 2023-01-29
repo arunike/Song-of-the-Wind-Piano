@@ -7,6 +7,7 @@ import com.richie.util.PhonogramUtil;
 
 /*
  * Define the Test class
+ * @param args: The arguments
  * This class is used to test the program
  */
 public class Test {

@@ -11,6 +11,7 @@ import java.util.concurrent.Executors;
 
 /*
  * Define the Audio class
+ * @param path: The path of the audio file
  * This class is used to play audio files
  */
 public class Audio {
